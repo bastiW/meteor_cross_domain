@@ -1,0 +1,30 @@
+<head>
+    <title>Meteor Chat Application.</title>
+</head>
+
+
+<body>
+
+
+</body>
+
+
+
+<template name="bamooChat">
+    <p>Let's chat :)</p>
+    {{> input }}
+    {{> messages }}
+</template>
+
+
+
+
+<template name="messages">
+    {{#each messages}}
+        <strong>{{name}}:</strong> {{message}}<br>
+    {{/each}}
+</template>
+
+<template name="input">
+    <p>Message: <input type="text" id="message"></p>
+</template>
